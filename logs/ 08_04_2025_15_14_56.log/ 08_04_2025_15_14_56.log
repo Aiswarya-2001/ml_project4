@@ -1,0 +1,8 @@
+[2025-08-04 15:14:58,083 ] 24 root - INFO - Entered the data ingestion method or component
+[2025-08-04 15:14:58,097 ] 27 root - INFO - Read the dataset as dataframe
+[2025-08-04 15:14:58,100 ] 32 root - INFO - Train-test split initiated
+[2025-08-04 15:14:58,103 ] 38 root - INFO - Ingestion of the data is completed
+[2025-08-04 15:14:58,117 ] 70 root - INFO - Read train and test data completed.
+[2025-08-04 15:14:58,117 ] 71 root - INFO - Obtaining preprocessor object.
+[2025-08-04 15:14:58,117 ] 51 root - INFO - Numerical and categorical columns encoding pipeline created.
+[2025-08-04 15:14:58,117 ] 84 root - INFO - Applying preprocessing object on train and test datasets.
