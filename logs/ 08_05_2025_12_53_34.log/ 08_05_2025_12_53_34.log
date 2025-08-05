@@ -1,0 +1,11 @@
+[2025-08-05 12:53:34,145 ] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-08-05 12:53:34,149 ] 97 werkzeug - INFO -  * Debugger PIN: 959-727-106
+[2025-08-05 12:54:45,578 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:54:45] "GET / HTTP/1.1" 200 -
+[2025-08-05 12:54:45,637 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:54:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-08-05 12:55:19,306 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:55:19] "GET /predictdata HTTP/1.1" 200 -
+[2025-08-05 12:55:46,828 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:55:46] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2025-08-05 12:55:46,901 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:55:46] "GET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-08-05 12:55:46,915 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:55:46] "GET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-08-05 12:55:46,978 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:55:46] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=kCKNqwHl8T2uhJIgCtTw HTTP/1.1" 200 -
+[2025-08-05 12:55:46,985 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:55:46] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-08-05 13:01:16,404 ] 97 werkzeug - INFO -  * Detected change in 'D:\\EDSTEM\\Edstem_Learning\\MLFlow_starter\\Ml_project3\\app.py', reloading

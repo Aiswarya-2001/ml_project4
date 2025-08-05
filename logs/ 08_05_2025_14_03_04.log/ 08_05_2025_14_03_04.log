@@ -1,0 +1,3 @@
+[2025-08-05 14:03:04,221 ] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-08-05 14:03:04,227 ] 97 werkzeug - INFO -  * Debugger PIN: 959-727-106
+[2025-08-05 14:03:14,820 ] 97 werkzeug - INFO -  * Detected change in 'D:\\EDSTEM\\Edstem_Learning\\MLFlow_starter\\Ml_project3\\application.py', reloading

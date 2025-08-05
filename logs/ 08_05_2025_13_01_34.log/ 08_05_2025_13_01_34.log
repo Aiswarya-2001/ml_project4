@@ -1,0 +1,6 @@
+[2025-08-05 13:01:34,628 ] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-08-05 13:01:34,628 ] 97 werkzeug - INFO -  * Debugger PIN: 959-727-106
+[2025-08-05 13:01:56,563 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 13:01:56] "POST /predictdata HTTP/1.1" 200 -
+[2025-08-05 13:02:19,926 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 13:02:19] "POST /predictdata HTTP/1.1" 200 -
+[2025-08-05 13:02:47,250 ] 97 werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 13:02:47] "POST /predictdata HTTP/1.1" 200 -
+[2025-08-05 14:03:01,309 ] 97 werkzeug - INFO -  * Detected change in 'D:\\EDSTEM\\Edstem_Learning\\MLFlow_starter\\Ml_project3\\application.py', reloading
