@@ -1,0 +1,43 @@
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Git and related files
+.git/
+.gitignore
+.gitattributes
+
+# Ignore local configuration files
+*.env
+.env.*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore large unnecessary files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Ignore Jupyter notebooks (if not needed for deployment)
+*.ipynb
+
+# Ignore test directories
+tests/
