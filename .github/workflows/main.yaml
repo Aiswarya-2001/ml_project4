@@ -48,7 +48,7 @@ jobs:
       - name: Build, tag, and push image to ECR
         run: |
           IMAGE_TAG=043319837845.dkr.ecr.us-east-1.amazonaws.com/studentperformance:latest
-          docker build -t $IMAGE_TAG ./studentperformance
+          docker build -t $IMAGE_TAG -f dockerfile
           docker push $IMAGE_TAG
 
 
