@@ -103,4 +103,4 @@ jobs:
           docker pull $ECR_URI:latest
 
           echo "Running container..."
-          docker run -d --name myapp -p 8000:8000 $ECR_URI:latest
+          docker run -d --name myapp -p 8080:8080 $ECR_URI:latest
