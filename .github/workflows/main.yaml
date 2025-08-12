@@ -1,3 +1,5 @@
+
+
 on:
   push:
     branches:
@@ -55,6 +57,15 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      - name: Install AWS CLI
+        run: |
+          if ! command -v aws &> /dev/null
+          then
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            unzip awscliv2.zip
+            sudo ./aws/install
+          fi
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -75,4 +86,3 @@ jobs:
           docker rm myapp || true
       
           docker run -d --name myapp -p 8000:8000 $ECR_URI:latest
-
