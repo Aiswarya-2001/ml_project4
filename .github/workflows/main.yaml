@@ -86,8 +86,12 @@ jobs:
       - name: Deploy to EC2
         run: |
           echo "Logging in to Amazon ECR..."
-          ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}
-          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin $ECR_URI
+          ECR_REGISTRY="${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com"
+          ECR_REPOSITORY="${{ secrets.ECR_REPOSITORY }}"
+          ECR_URI="$ECR_REGISTRY/$ECR_REPOSITORY"
+      
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} \
+          | docker login --username AWS --password-stdin $ECR_REGISTRY
       
           echo "Pulling latest Docker image and running container..."
           docker pull $ECR_URI:latest
