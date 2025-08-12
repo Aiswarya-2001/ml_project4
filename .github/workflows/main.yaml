@@ -45,10 +45,12 @@ jobs:
 
       - name: Build, tag, and push image to ECR
         run: |
-          IMAGE_TAG=latest
-          ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}
-          docker build -t $ECR_URI:$IMAGE_TAG .
-          docker push $ECR_URI:$IMAGE_TAG
+      - name: Build, tag, and push image to ECR
+        run: |
+          IMAGE_TAG=043319837845.dkr.ecr.us-east-1.amazonaws.com/studentperformance:latest
+          docker build -t $IMAGE_TAG .
+          docker push $IMAGE_TAG
+
 
   deploy:
     name: Continuous Deployment
