@@ -1,3 +1,4 @@
+
 on:
   push:
     branches:
@@ -87,16 +88,19 @@ jobs:
         run: |
           echo "Logging in to Amazon ECR..."
           ECR_REGISTRY="${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com"
-          ECR_REPOSITORY="${{ secrets.ECR_REPOSITORY }}"
+          ECR_REPOSITORY="studentperformance"
           ECR_URI="$ECR_REGISTRY/$ECR_REPOSITORY"
-      
+
           aws ecr get-login-password --region ${{ secrets.AWS_REGION }} \
           | docker login --username AWS --password-stdin $ECR_REGISTRY
-      
-          echo "Pulling latest Docker image and running container..."
-          docker pull $ECR_URI:latest
-      
+
+          echo "Cleaning old containers and images..."
           docker stop myapp || true
           docker rm myapp || true
-      
+          docker system prune -af || true
+
+          echo "Pulling latest Docker image..."
+          docker pull $ECR_URI:latest
+
+          echo "Running container..."
           docker run -d --name myapp -p 8000:8000 $ECR_URI:latest
